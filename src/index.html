@@ -4,10 +4,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpack App</title>
-<!--    <link rel="stylesheet" href="styles.css">-->
+    <script type="text/javascript" src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<div id="app">Hello, Webpack!</div>
-<!--<script src="main.js"></script>-->
+<main>
+    <section class="header-container">
+        <div class="breadcrumbs">
+            <div class="crumb">Szkolenia dla firm ></div>
+            <div class="crumb">Lista szkoleń ></div>
+            <div class="crumb active">Cloud</div>
+        </div>
+        <div class="logo"></div>
+        <h1 class="title">Szkolenie AWS Serverless - budowanie nowoczesnych aplikacji w chmurze</h1>
+        <div class="buttons">
+            <button class="ask">Zapytaj o szkolenie</button>
+            <button class="download">Pobierz program</button>
+        </div>
+    </section>
+    <section class="content">
+        <aside class="fixed-column"></aside>
+        <section class="content-section">
+            <div class="course-details">
+                <div class="detail">
+                    <p class="title">Poziom</p>
+                    Podstawowy
+                </div>
+                <div class="detail">
+                    <p class="title">Czas</p>
+                    16h / 2 dni
+                </div>
+                <div class="detail">
+                    <p class="title">Termin</p>
+                    Ustalamy indywidualnie
+                </div>
+                <div class="detail">
+                    <p class="title">Cena</p>
+                    Ustalamy indywidualnie
+                </div>
+            </div>
+            <div class="course-info">
+                <h2 class="title">Szkolenie z AWS</h2>
+                <p class="text">
+                    AWS Serverless stało się synonimem sposobu budowania nowoczesnych aplikacji chmurowych. Umożliwia
+                    bowiem tworzenie bardziej elastycznych aplikacji, w sposób szybszy i bezpieczniejszy niż w
+                    tradycyjnym modelu opartym o serwery. W serverless, programista może bowiem skupić się w pełni na
+                    implementowanej logice i pisaniu kodu, a nie na zarządzaniu infrastrukturą. Serverless to również
+                    cała gama różnych funkcjonalności, ułatwiających budowanie aplikacji, począwszy od bezserwerowej
+                    mocy obliczeniowej, przez analitykę, przechowywanie danych a nawet sztuczną inteligencję.
+                </p>
+            </div>
+            <div class="course-purpose">
+                <h2 class="title">Dla kogo jest kurs szkolenie AWS Serverless?</h2>
+                <div class="content">
+                    Pusty blok na własny HTML z możliwością dodania białego tła (boxu) i zostawienia bez tła
+                    blok “program szkolenia” może działać analogicznie jako zwykłe pole tekstowe dopsowujące się
+                    długością do zawartości
+
+                    + taka sama sekcja w wersji na pełną szerokość
+
+                </div>
+            </div>
+            <div class="course-requirements">
+                <h2 class="title">Jakie wymagania trzeba spełnić przed szkoleniem?</h2>
+                <ul class="content">
+                    <li class="requirement">
+                        <span>każdego, kto chce przestać myśleć i przejmować się infrastrukturą a zamiast tego chce skupić się na szybkim, łatwym i przyjemnym budowaniu nowoczesnych systemów i aplikacji.</span>
+                    </li>
+                    <li class="requirement">
+                        <span>każdego, kto chce przekonać się jak wykorzystując nowoczesne rozwiązania chmurowe (AWS) można budować systemy o niemal nielimitowanych możliwościach skalowania.</span>
+                    </li>
+                    <li class="requirement">
+                        <span>każdego programisty, dla którego „Dev” w „DevOps” jest dużo bardziej pociągające niż „Ops”.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="course-program">
+                <h2 class="title">Program szkolenia</h2>
+                <div class="section">
+                    <div class="day-section">
+                        <div class="day-title">Dzień 1: Wprowadzenie do AI i podstawowe techniki analizy danych</div>
+                        <div class="section-container">
+                            <div class="section-title">Podstawy sztucznej inteligencji</div>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Omówienie kluczowych pojęć i technik sztucznej inteligencji</li>
+                                    <li>Przegląd narzędzi i bibliotek AI</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="section-title">Przygotowanie danych do analizy AI</div>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Techniki czyszczenia i przekształcania danych</li>
+                                    <li>Wprowadzenie do eksploracyjnej analizy danych (EDA)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="section-title">Warsztat: Przygotowanie i eksploracja danych</div>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Praktyczne ćwiczenia w zakresie czyszczenia i transformacji danych</li>
+                                    <li>Wykorzystanie narzędzi EDA do analizy danych</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="section-title">Podstawowe modele AI w analizie danych</div>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Implementacja modeli regresji i klasyfikacji</li>
+                                    <li>Ocena i interpretacja wyników modeli</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day-section">
+                        <div class="day-title">Dzień 2: Zaawansowane techniki AI i zastosowania w analizie danych</div>
+                        <div class="section-container">
+                            <div class="section-title">Integracja zaawansowanych modeli AI</div>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Implementacja modeli głębokiego uczenia</li>
+                                    <li>Zastosowanie sieci neuronowych do analizy danych</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="section-title">Automatyzacja analiz z AI</div>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Tworzenie zautomatyzowanych procesów analitycznych</li>
+                                    <li>Integracja narzędzi AI z systemami analizy danych</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="section-title">Warsztat: Zaawansowane modele AI</div>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Praktyczne ćwiczenia z implementacji i oceny zaawansowanych modeli</li>
+                                    <li>Case studies z rzeczywistych zastosowań AI</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="section-title">Wizualizacja wyników analizy AI</div>
+                            <div class="section-content">
+                                <ul>
+                                    <li>Tworzenie interaktywnych raportów i dashboardów</li>
+                                    <li>Wykorzystanie narzędzi wizualizacyjnych do prezentacji wyników</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-program-download">
+                <h2 class="title">Pobierz program</h2>
+                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button class="download">Pobierz program</button>
+                <div class="image-download"></div>
+            </div>
+            <div class="course-skills">
+                <div class="title">Czego nauczysz się na szkoleniu?</div>
+                <ul class="skills-list">
+                    <li> pracy z szeregami czasowymi</li>
+                    <li>tworzenia baz danych</li>
+                    <li>efektywnego storytellingu danych</li>
+                    <li>wykorzystywania języka SQL</li>
+                    <li>Skill – lorem ipsum</li><li>Skill – lorem ipsum</li>
+                </ul>
+            </div>
+            <div class="course-contact">
+                <h2 class="title">Masz pytania?<br>Zapraszam do kontaktu.</h2>
+                <div class="contact-info">
+                    <div class="contact-image"></div>
+                    <p class="name"><strong>Przemysław Wołosz</strong></p>
+                    <p class="profession">Key Account Manager</p>
+                    <p>
+                        <a href="mailto:przemyslaw.wolosz@infoshareacademy.com">przemyslaw.wolosz@infoShareAcademy.com</a>
+                    </p>
+                    <p class="number">+48 730 830 801</p>
+                </div>
+                <form action="submit_form.php" method="post">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Numer telefonu</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="message">O co chcesz zapytać</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label class="privacy-policy">
+                        <input type="checkbox" name="acceptance" value="1" aria-invalid="false">
+                        <p class="text">
+                            Administratorem danych osobowych jest InfoShare Academy Sp. z o.o. z siedzibą w Gdańsku, al.
+                            Grunwaldzka 427B, 80-309 Gdańsk, KRS: 0000531749, NIP: 5842742121. Dane osobowe przetwarzane
+                            są zgodnie z
+                            <a href="#privacy-policy">klauzulą informacyjną</a>.
+                        </p>
+                    </label>
+                    <div class="button-container">
+                        <button class="submit" type="submit">Wyślij wiadomość</button>
+                    </div>
+                </form>
+            </div>
+            <div class="course-faq">
+                <h1>Najczęstsze pytania i odpowiedzi</h1>
+
+                <div class="faq-item">
+                    <p>Pytanie 1 [+]</p>
+                    <p id="answer1" style="display: none;">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry...</p>
+                </div>
+
+                <div class="faq-item">
+                    <p>Pytanie 2</p>
+                    <p id="answer2" style="display: none;">Tutaj znajduje się odpowiedź na pytanie 2.</p>
+                </div>
+
+                <div class="faq-item">
+                    <p>Pytanie 3</p>
+                    <p id="answer3" style="display: none;">Tutaj znajduje się odpowiedź na pytanie 3.</p>
+                </div>
+
+                <div class="faq-item">
+                    <p>Pytanie 4</p>
+                    <p id="answer4" style="display: none;">Tutaj znajduje się odpowiedź na pytanie 4.</p>
+                </div>
+
+                <div class="faq-item">
+                    <p>Pytanie 5</p>
+                    <p id="answer5" style="display: none;">Tutaj znajduje się odpowiedź na pytanie 5.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
 </body>
 </html>

@@ -3,11 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/index.js'),
+  entry: [
+    './src/index.js',
+    './src/main.scss'
+  ],
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: 'index.js',
     clean: true,
   },
   devtool: 'source-map',
@@ -16,38 +19,40 @@ module.exports = {
     port: 8080,
     open: true,
   },
+  optimization: {
+    usedExports: false,
+  },
   module: {
     rules: [
       {
-        test: /\.js$/, // Obsługuje pliki JavaScript
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'], // Użycie Babel
+            presets: ['@babel/preset-env'],
           },
         },
       },
       {
-        test: /\.scss$/, // Obsługuje pliki SCSS
+        test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, // Wyciąga CSS do osobnych plików
-          'css-loader', // Tłumaczy CSS na CommonJS
-          'sass-loader', // Kompiluje Sass do CSS
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
         ],
-      },
-      {
-        test: /\.html$/, // Obsługuje pliki HTML
-        use: ['html-loader'],
-      },
+      }
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      filename: 'index.html',
+      inject: 'body',
+      chunks: ['main'], // Wstawianie tylko głównego chunka
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.css', // Poprawna nazwa wynikowego pliku CSS
+      filename: 'styles.css', // Statyczna nazwa dla CSS
     }),
   ],
 };

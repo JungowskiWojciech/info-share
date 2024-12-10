@@ -1,3 +1,10 @@
-import './main.scss';
+document.querySelectorAll('.faq-item').forEach(elem => elem.addEventListener('click', () => toggleClick(elem)))
 
-document.getElementById('app').textContent = 'Webpack is working!';
+function toggleClick(elem) {
+    const classList = elem.classList
+    if(classList.contains('active')) {
+        classList.remove('active')
+    } else {
+        classList.add('active')
+    }
+}

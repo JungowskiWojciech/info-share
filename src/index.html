@@ -9,24 +9,38 @@
 
 </head>
 <body>
+<section class="header-container">
+    <div class="breadcrumbs">
+        <a class="crumb">Szkolenia dla firm ></a>
+        <a class="crumb">Lista szkoleń ></a>
+        <a class="crumb active">Cloud</a>
+    </div>
+    <div class="logo"></div>
+    <h1 class="title">Szkolenie AWS Serverless - budowanie nowoczesnych aplikacji w chmurze</h1>
+    <div class="buttons">
+        <button class="ask">Zapytaj o szkolenie</button>
+        <button class="download">Pobierz program</button>
+    </div>
+</section>
 <main>
-    <section class="header-container">
-        <div class="breadcrumbs">
-            <div class="crumb">Szkolenia dla firm ></div>
-            <div class="crumb">Lista szkoleń ></div>
-            <div class="crumb active">Cloud</div>
-        </div>
+    <aside class="fixed-column">
         <div class="logo"></div>
-        <h1 class="title">Szkolenie AWS Serverless - budowanie nowoczesnych aplikacji w chmurze</h1>
-        <div class="buttons">
-            <button class="ask">Zapytaj o szkolenie</button>
-            <button class="download">Pobierz program</button>
+        <div class="navigation">
+            <a href="#info" class="item">Szkolenie z AWS</a>
+            <a href="#purpose" class="item">Dla kogo jest to szkolenie?</a>
+            <a href="#requirement" class="item">Wymagania</a>
+            <a href="#program" class="item">Program szkolenia</a>
+            <a href="#skills" class="item">Czego się nauczysz?</a>
+            <a href="#contact" class="item">Kontakt</a>
+            <a href="#faq" class="item">FAQ</a>
         </div>
-    </section>
-    <section class="content">
-        <aside class="fixed-column"></aside>
+        <div class="buttons">
+            <button class="program">Zapytaj o szkolenie</button>
+            <button class="course">Pobierz program</button>
+        </div>
+    </aside>
         <section class="content-section">
-            <div class="course-details">
+            <section class="course-details">
                 <div class="detail">
                     <p class="title">Poziom</p>
                     Podstawowy
@@ -43,8 +57,8 @@
                     <p class="title">Cena</p>
                     Ustalamy indywidualnie
                 </div>
-            </div>
-            <div class="course-info">
+            </section>
+            <section id="info" class="course-info section">
                 <h2 class="title">Szkolenie z AWS</h2>
                 <p class="text">
                     AWS Serverless stało się synonimem sposobu budowania nowoczesnych aplikacji chmurowych. Umożliwia
@@ -54,8 +68,8 @@
                     cała gama różnych funkcjonalności, ułatwiających budowanie aplikacji, począwszy od bezserwerowej
                     mocy obliczeniowej, przez analitykę, przechowywanie danych a nawet sztuczną inteligencję.
                 </p>
-            </div>
-            <div class="course-purpose">
+            </section>
+            <section id="purpose" class="course-purpose section">
                 <h2 class="title">Dla kogo jest kurs szkolenie AWS Serverless?</h2>
                 <div class="content">
                     Pusty blok na własny HTML z możliwością dodania białego tła (boxu) i zostawienia bez tła
@@ -65,8 +79,8 @@
                     + taka sama sekcja w wersji na pełną szerokość
 
                 </div>
-            </div>
-            <div class="course-requirements">
+            </section>
+            <section id="requirement" class="course-requirements section">
                 <h2 class="title">Jakie wymagania trzeba spełnić przed szkoleniem?</h2>
                 <ul class="content">
                     <li class="requirement">
@@ -79,8 +93,8 @@
                         <span>każdego programisty, dla którego „Dev” w „DevOps” jest dużo bardziej pociągające niż „Ops”.</span>
                     </li>
                 </ul>
-            </div>
-            <div class="course-program">
+            </section>
+            <section id="program" class="course-program section">
                 <h2 class="title">Program szkolenia</h2>
                 <div class="section">
                     <div class="day-section">
@@ -162,86 +176,104 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="course-program-download">
+            </section>
+            <section class="course-program-download">
                 <h2 class="title">Pobierz program</h2>
-                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <button class="download">Pobierz program</button>
+                <div class="container">
+                    <p class="text">Pobierz szczegółowy program w PDF, żeby dowiedzieć się więcej o godzinach i tematach zajęć.</p>
+                    <button class="download">Pobierz program</button>
+                </div>
                 <div class="image-download"></div>
-            </div>
-            <div class="course-skills">
+            </section>
+            <section id="skills" class="course-skills section">
                 <div class="title">Czego nauczysz się na szkoleniu?</div>
                 <ul class="skills-list">
                     <li> pracy z szeregami czasowymi</li>
                     <li>tworzenia baz danych</li>
                     <li>efektywnego storytellingu danych</li>
                     <li>wykorzystywania języka SQL</li>
-                    <li>Skill – lorem ipsum</li><li>Skill – lorem ipsum</li>
+                    <li>Skill – lorem ipsum</li>
+                    <li>Skill – lorem ipsum</li>
                 </ul>
-            </div>
-            <div class="course-contact">
+            </section>
+            <section id="contact" class="course-contact section">
                 <h2 class="title">Masz pytania?<br>Zapraszam do kontaktu.</h2>
-                <div class="contact-info">
-                    <div class="contact-image"></div>
-                    <p class="name"><strong>Przemysław Wołosz</strong></p>
-                    <p class="profession">Key Account Manager</p>
-                    <p>
-                        <a href="mailto:przemyslaw.wolosz@infoshareacademy.com">przemyslaw.wolosz@infoShareAcademy.com</a>
-                    </p>
-                    <p class="number">+48 730 830 801</p>
-                </div>
-                <form action="submit_form.php" method="post">
-                    <label for="email">Adres e-mail</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="phone">Numer telefonu</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    <label for="message">O co chcesz zapytać</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    <label class="privacy-policy">
-                        <input type="checkbox" name="acceptance" value="1" aria-invalid="false">
-                        <p class="text">
-                            Administratorem danych osobowych jest InfoShare Academy Sp. z o.o. z siedzibą w Gdańsku, al.
-                            Grunwaldzka 427B, 80-309 Gdańsk, KRS: 0000531749, NIP: 5842742121. Dane osobowe przetwarzane
-                            są zgodnie z
-                            <a href="#privacy-policy">klauzulą informacyjną</a>.
-                        </p>
-                    </label>
-                    <div class="button-container">
-                        <button class="submit" type="submit">Wyślij wiadomość</button>
+                <h3 class="sub-title">zorganizujemy dla Ciebie szkolenie dopasowane do Twoich potrzeb</h3>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-image"></div>
+                        <p class="name"><strong>Przemysław Wołosz</strong></p>
+                        <p class="profession">Key Account Manager</p>
+                        <a class="email" href="mailto:przemyslaw.wolosz@infoshareacademy.com">przemyslaw.wolosz@infoShareAcademy.com</a>
+                        <p class="number">+48 730 830 801</p>
                     </div>
-                </form>
-            </div>
-            <div class="course-faq">
-                <h1>Najczęstsze pytania i odpowiedzi</h1>
-
-                <div class="faq-item">
-                    <p>Pytanie 1 [+]</p>
-                    <p id="answer1" style="display: none;">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry...</p>
+                    <form action="submit_form.php" method="post">
+                        <p class="form-title">Zamów rozmowę</p>
+                        <label for="email">Adres e-mail</label>
+                        <input placeholder="Email *" type="email" id="email" name="email" required>
+                        <label for="phone">Numer telefonu</label>
+                        <input placeholder="Telefon *" type="tel" id="phone" name="phone" required>
+                        <label for="message">O co chcesz zapytać</label>
+                        <textarea placeholder="Pytanie" id="message" name="message" rows="4" required></textarea>
+                        <label class="privacy-policy">
+                            <input type="checkbox" name="acceptance" value="1" aria-invalid="false">
+                            <p class="text">
+                                Administratorem danych osobowych jest InfoShare Academy Sp. z o.o. z siedzibą w Gdańsku, al.
+                                Grunwaldzka 427B, 80-309 Gdańsk, KRS: 0000531749, NIP: 5842742121. Dane osobowe przetwarzane
+                                są zgodnie z
+                                <a href="#privacy-policy">klauzulą informacyjną</a>.
+                            </p>
+                        </label>
+                        <div class="button-container">
+                            <button class="submit" type="submit">Wyślij wiadomość</button>
+                        </div>
+                    </form>
                 </div>
-
+            </section>
+            <section id="faq" class="course-faq section">
+                <h2 class="title">Najczęstsze pytania i odpowiedzi</h2>
                 <div class="faq-item">
-                    <p>Pytanie 2</p>
-                    <p id="answer2" style="display: none;">Tutaj znajduje się odpowiedź na pytanie 2.</p>
+                    <p class="item-title">Pytanie 1</p>
+                    <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        .</p>
                 </div>
-
                 <div class="faq-item">
-                    <p>Pytanie 3</p>
-                    <p id="answer3" style="display: none;">Tutaj znajduje się odpowiedź na pytanie 3.</p>
+                    <p class="item-title">Pytanie 2</p>
+                    <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. </p>
                 </div>
-
                 <div class="faq-item">
-                    <p>Pytanie 4</p>
-                    <p id="answer4" style="display: none;">Tutaj znajduje się odpowiedź na pytanie 4.</p>
+                    <p class="item-title">Pytanie 3</p>
+                    <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. </p>
                 </div>
-
                 <div class="faq-item">
-                    <p>Pytanie 5</p>
-                    <p id="answer5" style="display: none;">Tutaj znajduje się odpowiedź na pytanie 5.</p>
+                    <p class="item-title">Pytanie 4</p>
+                    <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. </p>
                 </div>
-            </div>
+                <div class="faq-item">
+                    <p class="item-title">Pytanie 5</p>
+                    <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. </p>
+                </div>
+            </section>
         </section>
-    </section>
 </main>
 </body>
 </html>
